@@ -24,18 +24,16 @@
         </div>
     </header>
     <main class="container">
-        <h2>Example creation usage:</h2>
-        <p><code>https://jjurl.herokuapp.com/new/https://www.google.com</code></p>
-        <p><code>https://jjurl.herokuapp.com/new/http://foo.com:8</code></p>
-        <br>
-        <h2>Example creation output:</h2>
-        <p><code>{ "originalUrl":"http://foo.com:80", "shortUrl":"https://jjurl.herokuapp.com/817d0" }</code></p>
-        <br>
-        <h2>Usage:</h2>
-        <p><code>https://jjurl.herokuapp.com/51bca</code></p>
-        <br>
-        <h2>Will redirect to:</h2>
-        <p><code>https://www.google.com/</code></p>
+        <form enctype="multipart/form-data" method="post" action="/get-file-size">
+            <div class="field">
+                <p class="control">
+                    <input name="file" type="file" value="Choose file">
+                </p>
+                <p class="control">
+                    <input type="submit" value="submit">
+                </p>
+            </div>
+        </form>
     </main>
 </body>
 
